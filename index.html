@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA - Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="favicon" rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <img src="images/logo.png" alt="ALPHA Logo" class="logo-image" />
+                <span class="logo-text">ALPHA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#collections" class="nav-link">Eventos</a></li>
+                <li><a href="#featured" class="nav-link">Nosotros</a></li>
+                <!-- <li><a href="#contact" class="nav-link">Contacto</a></li> -->
+                <li><a href="#contact" class="nav-cta">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#collections">Eventos</a></li>
+            <li><a href="#featured">Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-badge">New Collection 2025</div>
+                <h1 class="hero-title">
+                    <span class="line"><span>Alpha</span></span>
+                    <small class="line"><span><span class="accent"><small>Entertainment</small></small></span></span>
+                    <span class="line"><span></span></span>
+                </h1>
+                <p class="hero-description">
+                    Somos una empresa dedicada a la promoción y realización de eventos, comprometida con crear
+                    experiencias únicas que conecten personas, marcas y emociones.
+                    En Alpha Entertainment unimos creatividad, profesionalismo e innovación para transformar cada
+                    proyecto en un encuentro memorable.
+                </p>
+                <!-- <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Exclusive Pieces</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">48H</span>
+                        <span class="stat-label">Fast Delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Sustainable</span>
+                    </div>
+                </div> -->
+                <div class="cta-group">
+                    <a href="#collections" class="cta-button primary">Eventos</a>
+                    <a href="#featured" class="cta-button outline">Nosotros</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-carousel">
+                        <div class="carousel-slide active">
+                            <img src="images/gloriagaynor.jpg" alt="Gloria Gaynor">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/alanparson.jpg" alt="Alan Parson">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/elo.png" alt="Electric Light Orchestra">
+                        </div>
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <!-- <div class="floating-tags">
+                        <div class="tag">Limited Edition</div>
+                        <div class="tag">Handcrafted</div>
+                        <div class="tag">Premium Quality</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="collections" id="collections">
+        <div class="section-header">
+            <h2 class="section-title">Eventos</h2>
+            <p class="section-subtitle">Artistas</p>
+        </div>
+
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">Todos</button>
+            <button class="tab-btn" data-category="international">Internacionales</button>
+            <button class="tab-btn" data-category="national">Nacionales</button>
+            <!-- <button class="tab-btn" data-category="accessories">Accessories</button>
+            <button class="tab-btn" data-category="limited">Limited Edition</button> -->
+        </div>
+
+        <div class="grid" id="collectionsGrid">
+
+    <!-- Gloria Gaynor -->
+    <div class="collection-card" data-category="international">
+        <div class="collection-thumbnail">
+            <img src="images/gloriag.jpg" alt="Gloria Gaynor en concierto">
+        </div>
+        <div class="card-content">
+            <span class="card-badge">Internacional</span>
+            <h3 class="card-title">Gloria Gaynor - 2014</h3>
+            <p class="card-subtitle">La reina del disco y la voz de “I Will Survive”</p>
+            <p class="card-price">Más de cinco décadas de carrera</p>
+        </div>
+    </div>
+
+            <!-- Electric Light Orchestra -->
+            <div class="collection-card" data-category="international">
+                <div class="collection-thumbnail">
+                    <img src="images/elo.jpg" alt="Electric Light Orchestra en concierto">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Internacional</span>
+                    <h3 class="card-title">Electric Light Orchestra - 2011</h3>
+                    <p class="card-subtitle">Rock sinfónico legendario</p>
+                    <p class="card-price">Más de 100 millones de discos vendidos</p>
+                    
+                </div>
+            </div>
+
+            <!-- Alan Parsons -->
+            <div class="collection-card" data-category="international">
+                <div class="collection-thumbnail">
+                    <img src="images/alanparson.jpg" alt="Alan Parsons en el Luna Park">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Internacional</span>
+                    <h3 class="card-title">Alan Parsons Project - 2012</h3>
+                    <p class="card-subtitle">Show inolvidable en el Luna Park</p>
+                    <p class="card-price">50 años de trayectoria musical</p>
+                </div>
+            </div>
+
+            <!-- Guitarrista Puertorriqueño -->
+            <div class="collection-card" data-category="international">
+                <div class="collection-thumbnail">
+                    <img src="images/josef.avif" alt="Con México en el Corazón">
+                </div>
+                <div class="card-content">
+                    <span class="card-badge">Internacional</span>
+                    <h3 class="card-title">José Feliciano - 2010/2008</h3>
+                    <p class="card-subtitle">Grán artista puerto riqueño</p>
+                    <p class="card-price">6 premios Grammy</p>
+                </div>
+            </div>
+
+        <!-- Horacio Guarany -->
+        <div class="collection-card" data-category="national">
+            <div class="collection-thumbnail">
+                <img src="images/horacioguarany.jpeg" alt="Horacio Guarany en el Luna Park">
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Nacional</span>
+                <h3 class="card-title">Horacio Guarany - 2009</h3>
+                <p class="card-subtitle">Despedida en un Luna Park colmado</p>
+                <p class="card-price">3 horas de emoción y música</p>
+            </div>
+        </div>
+
+        <!-- Ex Ráfaga -->
+        <div class="collection-card" data-category="national">
+            <div class="collection-thumbnail">
+                <img src="images/laotradimension.jpg" alt="La otra dimensión en vivo">
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Nacional</span>
+                <h3 class="card-title">Ex Ráfaga La otra dimensión - 2013</h3>
+                <p class="card-subtitle">Maury, Ariel y Sergio en el Luna Park</p>
+                <p class="card-price">Presentación de su nuevo trabajo</p>
+            </div>
+        </div>
+
+                <!-- Ex Ráfaga -->
+        <div class="collection-card" data-category="national">
+            <div class="collection-thumbnail">
+                <img src="images/cardozo.jpeg" alt="La otra dimensión en vivo">
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Nacional</span>
+                <h3 class="card-title">Daniel Cardozo - 2013</h3>
+                <p class="card-subtitle">Cantante recordado por el grupo Los Charros</p>
+                <p class="card-price">Show único</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <div class="featured-container">
+            <div class="featured-hero">
+                <div class="featured-content">
+                    <span class="label">Quienes somos</span>
+                    <h2>Alpha Entertainment</h2>
+                    <p>
+                    Somos una empresa dedicada a la promoción, producción y realización de espectáculos en vivo. 
+                    Desde nuestros inicios, nos hemos comprometido con ofrecer experiencias únicas que combinan calidad artística, 
+                    excelencia técnica y un profundo respeto por el público y los artistas.
+                </p>
+                <p>
+                    Con una sólida trayectoria en la organización de conciertos, eventos corporativos y presentaciones internacionales, 
+                    Alpha Entertainment ha sido parte de noches inolvidables en escenarios emblemáticos como el Estadio Luna Park, 
+                    el Teatro Gran Rex y otros auditorios destacados del país. 
+                </p>
+                <p>
+                    Hemos acompañado a artistas de renombre mundial —como Electric Light Orchestra, Alan Parsons Project, Gloria Gaynor y figuras de la música popular latinoamericana— 
+                    llevando adelante producciones que se destacan por su profesionalismo y su capacidad de conectar emociones a través de la música y el espectáculo.
+                </p>
+                <p>
+                    Nuestro objetivo es seguir construyendo momentos que trasciendan, impulsando el arte y el entretenimiento con pasión, 
+                    creatividad y una mirada puesta en la innovación constante.
+                </p>
+
+                    <div class="feature-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🏟️</div>
+                            <div class="highlight-title">Luna Park</div>
+                            <div class="highlight-desc">Av. Madero 420 (C1106ABE) Ciudad Autónoma de Buenos Aires, Argentina</div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎭</div>
+                            <div class="highlight-title">Gran Rex</div>
+                            <div class="highlight-desc">Avenida Corrientes 857 1043 Ciudad Autónoma de Buenos Aires, Argentina</div>
+                        </div>
+                        <!-- <div class="highlight-item">
+                            <div class="highlight-icon">✨</div>
+                            <div class="highlight-title">Handcrafted</div>
+                            <div class="highlight-desc">Each piece is carefully crafted by skilled artisans</div>
+                        </div> -->
+                    </div>
+
+                    <!-- <a href="#collections" class="feature-cta">Discover Our Craft</a> -->
+                </div>
+
+                <div class="featured-image-section">
+                    <div class="featured-image-grid">
+                        <div class="featured-img">
+                            <img src="images/Logo.png" alt="Fashion Collection Showcase">
+                        </div>
+                        <!-- <div class="featured-img">
+                            <img src="images/art-of-fashion-02.avif" alt="Luxury Fashion Details">
+                        </div>
+                        <div class="featured-img">
+                            <img src="images/art-of-fashion-03.avif" alt="Artisan Craftsmanship">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="testimonials">
+                <div class="testimonials-header">
+                    <h3>What Our Customers Say</h3>
+                    <p class="section-subtitle">Real stories from fashion enthusiasts</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "NOIR has completely transformed my wardrobe. The quality and attention to detail is
+                            unmatched. Every piece feels like a work of art."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <h4>Sarah Chen</h4>
+                                <p>Fashion Blogger</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "The sustainable approach combined with luxury design is exactly what I was looking for.
+                            NOIR proves you don't have to compromise."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <h4>Marcus Rodriguez</h4>
+                                <p>Creative Director</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <div class="testimonial-quote">
+                            "I've been a customer for three years now, and each collection keeps exceeding my
+                            expectations. The fit and quality are consistently outstanding."
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div class="author-info">
+                                <h4>Alexandra Kim</h4>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">Contactate con nosotros</p>
+            </div>
+
+<div class="contact-content">
+    <div class="contact-form-wrapper">
+        <form id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Nombre</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Juan" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Apellido</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Pérez" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="juan@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Motivo de tu mensaje" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribí tu consulta o comentario..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+                <h3>Visítanos</h3>
+                <p>Av. Pte. Roque Sáenz Peña 1119<br>
+                    4º Piso, Oficina 415<br>
+                    Ciudad Autónoma de Buenos Aires, Argentina</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-content">
+                <h3>Teléfono</h3>
+                <p><a href="tel:+541143835214">(011) 4383-5214</a></p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-content">
+                <h3>Email</h3>
+                <p><a href="mailto:info@alphaentertainment.com.ar">info@alphaentertainment.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="map-section">
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9434192078375!2d-58.38251292435355!3d-34.60840735736367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9e9ce1f0f%3A0x6f8e28a34b60dc0d!2sAv.%20Pres.%20Roque%20S%C3%A1enz%20Pe%C3%B1a%201119%2C%20C1035%20AAC%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1731450000000"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>ALPHA</h3>
+                <p>Somos una empresa dedicada a la promoción, producción y realización de espectáculos en vivo</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">t</a>
+                    <a href="#" class="social-link">i</a>
+                    <!-- <a href="#" class="social-link">p</a> -->
+                </div>
+            </div>
+          
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ALPHA. All rights reserved. | Designed by <a href="https://jvmsoluciones.com.ar" target="_blank"
+                    rel="nofollow" style="color: var(--accent); text-decoration: none;">JVM Soluciones</a></p>
+            <!-- <div class="payment-methods">
+                <div class="payment-icon">VISA</div>
+                <div class="payment-icon">MC</div>
+                <div class="payment-icon">AMEX</div>
+                <div class="payment-icon">PAY</div>
+            </div> -->
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
